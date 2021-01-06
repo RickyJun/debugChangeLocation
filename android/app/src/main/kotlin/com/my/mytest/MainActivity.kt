@@ -12,7 +12,10 @@ class MainActivity: FlutterActivity(){
         System.out.println("onCreate in")
         var s = SetLocation(this)
         s.init_location()
-        s.startSet(113.378539,23.132608)
+        //高德：113.371721,23.125588 ，经度，-向左，纬度，-向下
+        //百度：113.378416,23.132594
+        //微调整过后：113.366601,23.128978
+        s.startSet(113.366601,23.128978)
         return super.onCreateView(name, context, attrs)
     }
 }
